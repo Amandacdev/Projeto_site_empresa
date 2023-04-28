@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+     
+</head>
+  
+<body style="text-align:center;" id="body">
+    <h2 style="color:green">GeeksforGeeks</h2>
+    <p><b>Enter the value to store:</b></p>
+  
+    <input type="text" id="data" name="input"><br/>
+    <br/>
+    <button id="b1">Store entered data</button>
+    <button id="b2">View data </button><br/><br/>
+    <div id="display"></div>
+    
+    <script>
+    $(document).ready(function(){
+     // We are setting user data to data tag 
+         $("#b1").click(function(){
+         var d=($("#data").val());
+         $("#data").data("userdata",d);
+      });
+      //Displaying data after accessing from data tag 
+      $("#b2").click(function(){
+         $("#display").html($("#data").data("userdata")) ;
+          
+      });
+    });
+   </script>
+</body>
+    
+</html>
+
+<!--
+<div id="wrapper">
+    <div class="scrollbar" id="style-1">
+      <div class="force-overflow">Oii</div>
+    </div>
+</div>
+
+<style>
+
+.scrollbar
+{
+	margin-left: 30px;
+	float: left;
+	height: 300px;
+	width: 65px;
+	background: #F5F5F5;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+.force-overflow
+{
+	min-height: 450px;
+}
+
+#wrapper
+{
+	text-align: center;
+	width: 500px;
+	margin: auto;
+}
+
+/*
+ *  STYLE 1
+ */
+
+#style-1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+
+
+</style>
+-->

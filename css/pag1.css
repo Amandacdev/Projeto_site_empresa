@@ -12,7 +12,7 @@
     text-align: center;
 }
 
-#btn-col1, #btn-col2, #btn-col3, #btn-col4{
+#btn-col1, #btn-col2, #btn-col3, #btn-col4, #p-col5 {
     background-color: #006494;
     border: none;
     color: white;
@@ -31,7 +31,7 @@
     width: 100%;
 }
 
-#btn-col5{
+#btn-col6{
     position: absolute;
     top: 50%;
     left: 45%;
@@ -45,7 +45,7 @@
     text-align: center;
 }
 
-#btn-col5:hover {
+#btn-col6:hover {
     background-color: #13293d;
     color: white;
 }

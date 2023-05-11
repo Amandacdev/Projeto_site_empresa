@@ -63,16 +63,24 @@ ul .bi-check-circle-fill, .bi-trash-fill{
 }
 
 ul .bi-check-circle-fill{
-    right: 15px;
+    right: 35px;
     color: green;
 }
-
+/*
 ul .bi-trash-fill{
     position: fixed;
     right: 35%;
     top:73%;
     color: rgb(253, 14, 14);
 }
+*/
+
+ul .bi-trash-fill{
+    right: 15px;
+    color: rgb(202, 48, 21);
+}
+
+
 
 ul .checked{
     background: lightgreen;
